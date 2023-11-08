@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 
 interface AccordionProps {
@@ -16,7 +15,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
 
   return (
     <div
-      className={`border border-gray-300 rounded-md mb-4 ${
+      className={`border border-gray-300 rounded-md mb-4 bg-[#f4f4f4] ${
         isOpen ? "bg-white" : ""
       }`}
     >
@@ -24,11 +23,17 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
         className="flex items-center justify-between p-4 cursor-pointer"
         onClick={toggleAccordion}
       >
-        <h2 className="text-lg font-medium text-black">{title}</h2>
+        <h2
+          className={`text-lg font-medium ${
+            isOpen ? "text-blue-600" : "text-black"
+          }`}
+        >
+          {title}
+        </h2>
         <svg
           className={`w-6 h-6 transform transition-transform ${
             isOpen ? "rotate-90" : "rotate-0"
-          }`}
+          } ${isOpen ? "rotate-90 text-blue-600" : "rotate-0 text-black"}`}
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -42,7 +47,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
         </svg>
       </div>
       <div
-        className={`${
+        className={`ease-in-out duration-300 ${
           isOpen && "p-4"
         } transition-max-h max-h-0 overflow-hidden ${
           isOpen ? "max-h-full" : ""
