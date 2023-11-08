@@ -12,8 +12,7 @@ export default function Home() {
         <div
           className="relative bg-cover bg-center text-white"
           style={{
-            backgroundImage:
-              "url(http://autismoerealidade.org.br/wp-content/uploads/2019/03/banner-title-perguntas.jpg)",
+            backgroundImage: "/public/banner.png",
           }}
         >
           <div className="absolute inset-0 bg-black opacity-50 blur-[1px]"></div>
