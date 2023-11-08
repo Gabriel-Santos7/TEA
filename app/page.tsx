@@ -19,7 +19,7 @@ export default function Home() {
           <h2 className="text-2xl font-regular tracking-tight text-center sm:text-left">
             Autismo em harmonia
           </h2>
-          <h2 className="text-5xl font-extrabold tracking-tight text-center sm:text-left">
+          <h2 className="text-4xl font-extrabold tracking-tight text-center sm:text-left">
             PERGUNTAS E RESPOSTAS
           </h2>
         </div>
