@@ -28,9 +28,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-white py-10">
+        <div className="bg-blue-500 py-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-regular text-center tracking-tight text-gray-900 leading-8 ">
+            <h2 className="text-white text-2xl font-regular text-center tracking-tight text-gray-900 leading-8 ">
+              As Práticas Integrativas e Complementares em Saúde (PICS) são
+              abordagens terapêuticas que têm como objetivo prevenir agravos à
+              saúde, a promoção e recuperação da saúde, enfatizando a escuta
+              acolhedora, a construção de laços terapêuticos e a conexão entre
+              ser humano, meio ambiente e sociedade.
+            </h2>
+            <br></br>
+            <h2 className="text-white text-2xl font-regular text-center tracking-tight text-gray-900 leading-8 ">
               Abaixo reunimos algumas das perguntas mais frequentes que
               recebemos sobre o transtorno do espectro autista.
             </h2>
